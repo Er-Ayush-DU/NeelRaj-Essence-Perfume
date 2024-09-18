@@ -49,8 +49,16 @@ html {
 .searchBar input {
   width: 610px;
   height: 40px;
+  padding-left: 18px;
+  font-size: 14px;
   border-radius: 5rem;
   border: none;
+}
+
+.searchBar input::placeholder {
+  padding-left: 10px;
+  font-size: 16px;
+
 }
 
 
@@ -97,7 +105,7 @@ html {
   width: 100%;
   font-weight: 520;
   font-size: 16px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   padding-left: 10px;
 }
 
@@ -122,7 +130,7 @@ html {
 }
 
 .nav-links a:hover {
-  color: green;
+  color: rgb(186, 16, 16);
 
 }
 
@@ -134,7 +142,6 @@ html {
 .hero_image {
   width: 100vw;
   height: 580px;
-  /* margin-top: 10px; */
   background: url('assets/HeroImage1a.png');
   background-size: cover;
   background-position: center;
@@ -144,7 +151,7 @@ html {
 
 }
 
-/* Define the keyframes */
+
 @keyframes hero-image {
   0% {
     background: url('assets/HeroImage1a.png');
@@ -185,96 +192,6 @@ html {
 /* Media Query for Header Section */
 
 
-
-
-@media only screen and (max-width: 600px) {
-  /*  media query for 600 view port */
-
-
-  /* For NavBar1 */
-
-
-
-  .logo img {
-    display: none;
-
-  }
-
-  .Trademark h2 {
-    font-size: 14px;
-
-  }
-
-  .searchBar input {
-    width: 150px;
-    height: 30px;
-  }
-
-
-  .Addcard {
-    font-size: 20px;
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* For navBar2 */
-
-
-
-  .nav-links {
-    font-size: 12px;
-    font-weight: 550;
-    /* height: 40px; */
-  }
-
-
-
-  #navBar {
-    display: flex;
-
-  }
-
-  .menu-icon {
-    display: inline;
-  }
-
-
-  .hideOnMobile {
-    display: none;
-  }
-
-
-
-
-  /* For Hero Image */
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
 /* Media query for viwport of 600 to 1120 */
 
 
@@ -299,8 +216,17 @@ html {
   .searchBar input {
     width: 210px;
     height: 30px;
+    padding-left: 12px;
+    font-size: 12px;
 
   }
+
+  .searchBar input::placeholder {
+    padding-left: 8px;
+    font-size: 13px;
+
+  }
+
 
   .Addcard {
     font-size: 24px;
@@ -318,9 +244,176 @@ html {
 
 
 
+
+
+
   /* For Hero Image */
 
 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  /*  media query for 600 view port */
+
+
+  /* For NavBar1 */
+
+
+
+  .logo img {
+    display: none;
+
+  }
+
+  .Trademark h2 {
+    font-size: 14px;
+
+  }
+
+
+
+  .searchBar input {
+    width: 150px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 10px;
+  }
+
+  .searchBar input::placeholder {
+    padding-left: 5px;
+    font-size: 10px;
+
+  }
+
+
+  .Addcard {
+    font-size: 20px;
+
+  }
+
+
+
+
+
+
+
+
+
+  /* For navBar2 */
+
+
+
+  .nav-links {
+    font-size: 12px;
+    font-weight: 550;
+    /* height: 40px; */
+  }
+
+  .nav-links a:hover {
+    color: rgb(186, 16, 16);
+    background-color: rgba(255, 255, 255, 0.605);
+
+  }
+
+
+
+  #navBar {
+    display: flex;
+
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+
+
+  .hideOnMobile {
+    display: none;
+  }
+
+
+
+
+  /* For Hero Image */
+
+  .hero_image {
+    width: 100vw;
+    height: 490px;
+    background: url('assets/bgMobile2.jpg');
+
+  }
+
+  /* Define the keyframes */
+  @keyframes hero-image {
+    0% {
+      background: url('assets/bgMobile2.jpg');
+    }
+
+    25% {
+      background: url('assets/bgMobile3.jpg');
+    }
+
+    75% {
+      background: url('assets/bgMobile1.jpg');
+    }
+
+    100% {
+      background: url('assets/bgMobile2.jpg');
+    }
+
+  }
+
+
+
+
+}
+
+
+
+
+
+
+/* For Background image In Tablet */
+
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+  .hero_image {
+    width: 100vw;
+    height: 490px;
+    background: url('assets/bgMobile2.jpg');
+
+  }
+
+  /* Define the keyframes */
+  @keyframes hero-image {
+    0% {
+      background: url('assets/bgTablet1.jpg');
+    }
+
+    25% {
+      background: url('assets/bgTablet2.jpg');
+    }
+
+    75% {
+      background: url('assets/bgTablet3.jpg');
+    }
+
+    100% {
+      background: url('assets/bgTablet1.jpg');
+    }
+
+  }
 
 
 }
