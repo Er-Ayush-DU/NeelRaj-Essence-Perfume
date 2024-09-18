@@ -18,12 +18,13 @@ html {
 .hero_nav1 {
   width: 100vw;
   height: 7rem;
-  background: linear-gradient(to right, #020F3C, #0930BC, #061754);
+  /* background: linear-gradient(to right, #020F3C, #0930BC, #061754); */
+  background: linear-gradient(to right, #6c3483 10%, #a569bd, #6c3483 10%);
   display: flex;
   justify-content: center;
   justify-content: space-around;
   align-items: center;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 
 }
 
@@ -55,7 +56,7 @@ html {
 
 
 .Addcard {
-  color: rgb(155, 14, 4);
+  color: white;
   font-size: 28px;
 
 }
@@ -63,6 +64,10 @@ html {
 
 
 /* Header Section (Hero Nav Bar 2) */
+
+#navBar {
+  background: #e8daef;
+}
 
 .menu-icon {
   display: none;
@@ -96,6 +101,10 @@ html {
   padding-left: 10px;
 }
 
+/* #sidebar a:hover {
+  color: #4a235a;
+} */
+
 
 .nav-links {
   display: flex;
@@ -113,7 +122,8 @@ html {
 }
 
 .nav-links a:hover {
-  color: yellow
+  color: green;
+
 }
 
 
@@ -123,8 +133,8 @@ html {
 
 .hero_image {
   width: 100vw;
-  height: 570px;
-  margin-top: 10px;
+  height: 580px;
+  /* margin-top: 10px; */
   background: url('assets/HeroImage1a.png');
   background-size: cover;
   background-position: center;
@@ -195,11 +205,9 @@ html {
 
   }
 
-
   .searchBar input {
     width: 150px;
     height: 30px;
-    border-radius: 5rem;
   }
 
 
@@ -224,57 +232,13 @@ html {
 
   /* For navBar2 */
 
-  .hero_image {
-    width: 100vw;
-    height: 480px;
-    margin-top: 10px;
-    background: url('assets/HeroImage1a.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: hero-image 10s infinite;
-
-
-  }
-
-  /* Define the keyframes */
-  @keyframes hero-image {
-    0% {
-      background: url('assets/HeroImage1a.png');
-    }
-
-    25% {
-      background: url('assets/bg mobile view1.jpg');
-    }
-
-    75% {
-      background: url('assets/HeroImage3.png');
-    }
-
-    100% {
-      background: url('assets/HeroImage1a.png');
-    }
-
-  }
-
-
-
-
-
-
-
-
 
 
   .nav-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     font-size: 12px;
     font-weight: 550;
     /* height: 40px; */
   }
-
 
 
 
@@ -295,7 +259,7 @@ html {
 
 
 
-
+  /* For Hero Image */
 
 
 
@@ -320,9 +284,6 @@ html {
   /* For navBar1 */
 
 
-
-
-
   .logo img {
     height: 110px;
     width: 140px;
@@ -338,13 +299,17 @@ html {
   .searchBar input {
     width: 210px;
     height: 30px;
-    border-radius: 5rem;
+
   }
 
   .Addcard {
     font-size: 24px;
 
   }
+
+
+
+  /* For NavBar 2 */
 
   .nav-links {
     font-size: 16px;
@@ -353,52 +318,7 @@ html {
 
 
 
-
-  .hero_image {
-    width: 100vw;
-    height: 100vh;
-    margin-top: 10px;
-    background: url('assets/HeroImage1a.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: hero-image 10s infinite;
-
-
-  }
-
-
-  /* Define the keyframes */
-  @keyframes hero-image {
-    0% {
-      background: url('assets/HeroImage1a.png');
-    }
-
-    25% {
-      background: url('assets/my2.jpg');
-    }
-
-    75% {
-      background: url('assets/HeroImage3.png');
-    }
-
-    100% {
-      background: url('assets/HeroImage1a.png');
-    }
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
+  /* For Hero Image */
 
 
 
