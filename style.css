@@ -37,6 +37,7 @@ html {
 .Trademark {
   color: white;
   text-transform: uppercase;
+  font-family: "poppins", "sans-serif", inter;
 
 }
 
@@ -147,6 +148,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   animation: hero-image 10s infinite;
+  margin-bottom: 80px;
 
 
 }
@@ -413,6 +415,81 @@ html {
       background: url('assets/bgTablet1.jpg');
     }
 
+  }
+
+
+}
+
+
+
+
+
+/* Main Section */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h1 {
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(to right, #A71B08, #F9270B, #A23122, #911808);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "poppins", "sans-serif", inter;
+}
+
+.about p {
+  width: 80vw;
+  height: 20vh;
+  font-size: 16px;
+  overflow-y: hidden;
+
+}
+
+.about p::selection {
+  background-color: #f17929;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY FOR MAIN section */
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+  .about h1 {
+    font-size: 20px;
+    padding-bottom: 8px;
+    font-size: x-large;
+    font-family: "poppins", "sans-serif", inter;
+
+  }
+
+  .about p {
+    height: 50vh;
   }
 
 
